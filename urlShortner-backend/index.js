@@ -14,6 +14,9 @@ connectToDB();
 app.use(express.json());
 
 //API ROUTES
+app.get("/", (req, res) => {
+  return res.send("Backend is Running!!");
+});
 app.use(cors());
 app.use("/api/url", urlRouter);
 app.get("/:shortId", redirectToUrl);
