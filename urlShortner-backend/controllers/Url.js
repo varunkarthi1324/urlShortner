@@ -11,7 +11,7 @@ export async function generateShortUrl(req, res) {
       return res.status(400).send({ message: "The Url is Invalid" });
     }
 
-    const shortId = nanoid(5);
+    const shortId = nanoid(6);
 
     //Save the url in DB
     const dataToSave = new UrlModel({ originalUrl, shortId });
