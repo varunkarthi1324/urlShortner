@@ -12,7 +12,7 @@ function App() {
     setShortUrl("");
     try {
       const response = await fetch(
-        "https://urlshortner-backend-uwyk.onrender.com/api/url/shorten",
+        "https://shortlyurt.vercel.app/api/url/shorten",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
